@@ -1,0 +1,45 @@
+#hero {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.hero-container {
+  width: 95%;
+}
+
+.hero-text-container {
+  display: flex;
+  justify-content: right;
+}
+
+.hero-text {
+  width: 50%;
+}
+.hero-text h1 {
+  font-size: clamp(3.3rem, 5vw, 5rem);
+  font-weight: 600;
+}
+.hero-text h2 {
+  font-size: 1.7rem;
+  font-weight: 100;
+}
+
+.hero-image {
+  width: 100%;
+  padding-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .hero-text {
+    width: 100%;
+  }
+  .hero-text h1 {
+    font-size: 10vw;
+  }
+  .hero-text h2 {
+    font-size: 5vw;
+  }
+}

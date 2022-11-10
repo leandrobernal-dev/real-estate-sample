@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 20px;
+}
+nav ul {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 95%;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.contact-link:hover {
+  color: #6b6b6b;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

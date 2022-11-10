@@ -1,0 +1,38 @@
+#reviews {
+  display: flex;
+  justify-content: center;
+
+  padding: 50px 0 50px 0;
+}
+
+.reviews-container {
+  width: 95%;
+}
+
+.reviews-content {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews-content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  padding-left: 30%;
+  padding-top: 50px;
+
+  gap: 50px;
+}
+
+@media (max-width: 700px) {
+  .reviews-content-grid {
+    padding-left: 0;
+  }
+}
+@media (max-width: 600px) {
+  .reviews-content-grid {
+    grid-template-columns: 1fr;
+    width: 80%;
+    gap: 70px;
+  }
+}
